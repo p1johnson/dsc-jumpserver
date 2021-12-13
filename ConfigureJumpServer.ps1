@@ -2,7 +2,7 @@ Configuration JumpServer {
 
     Param ()
 
-    ##Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -Force
+    #Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser -Force
     Import-DscResource -ModuleName PSDesiredStateConfiguration, cChoco, GPRegistryPolicyDsc, NetworkingDsc
 
     $Interface = Get-NetAdapter | Where-Object Name -Like "Ethernet*" | Select-Object -First 1
