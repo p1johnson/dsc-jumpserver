@@ -1,7 +1,7 @@
 name: publish
 on:
   push:
-    #branches-ignore: [main]
+    branches: [main]
     paths: [ConfigureJumpServer.ps1]
 jobs:
   publish-module:
